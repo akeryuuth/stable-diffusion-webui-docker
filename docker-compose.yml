@@ -31,7 +31,7 @@ services:
     build: ./services/AUTOMATIC1111
     image: sd-auto:67
     environment:
-      - CLI_ARGS=--allow-code --medvram --xformers --opt-split-attention --no-half-vae --enable-insecure-extension-access --api --autolaunch --update-all-extensions
+      - CLI_ARGS=--allow-code --medvram --xformers --opt-split-attention --no-half-vae --enable-insecure-extension-access --api
 
   auto-cpu:
     <<: *automatic
